@@ -52,8 +52,8 @@ def data_TrainDevTest(adlist, eczemalist):
     split adlist to dev=300, test=300, train=remaining
     randomly pick 2691 out of eczemalist, and do the same split
     '''
-    posdir = 'classification/AD_nonAD/pos/'
-    negdir = 'classification/AD_nonAD/neg/'
+    posdir = 'AD_nonAD/pos/'
+    negdir = 'AD_nonAD/neg/'
     random.shuffle(adlist)
     random.shuffle(eczemalist)
     eczemalist_now = eczemalist[:2691]
@@ -71,16 +71,13 @@ def data_TrainDevTest(adlist, eczemalist):
 
 
 if __name__ == "__main__":
-    fdataname = 'data/ad_pubmed_abstracts.csv'
+    fdataname = 'pubmed_abstracts/ad_pubmed_abstracts.csv'
     datalist = csv2list(fdataname)
     adlist, eczemalist, dermatitislist, nonadlist = separate_AD_nonAD(datalist)
     print('AD:', len(adlist), '\neczema non-AD:', len(eczemalist),
           '\ndermatitis non-AD:', len(dermatitislist),'\nother non-AD:', len(nonadlist))
 
     data_TrainDevTest(adlist, eczemalist)
-    # data_TrainDevTest(adlist, nonadlist)
-    # print(datalist[3])
-    # print(len(datalist))
 
 
 
