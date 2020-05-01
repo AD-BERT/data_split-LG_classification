@@ -71,7 +71,7 @@ def data_TrainDevTest(adlist, eczemalist):
 
 
 if __name__ == "__main__":
-    fdataname = 'pubmed_abstracts/ad_pubmed_abstracts.csv'
+    fdataname = '../pubmed_abstracts/ad_pubmed_abstracts.csv'
     datalist = csv2list(fdataname)
     adlist, eczemalist, dermatitislist, nonadlist = separate_AD_nonAD(datalist)
     print('AD:', len(adlist), '\neczema non-AD:', len(eczemalist),
