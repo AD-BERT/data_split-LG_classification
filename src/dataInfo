@@ -1,0 +1,16 @@
+AD: 2692
+eczema non-AD: 6001
+dermatitis non-AD: 515
+other non-AD: 3474
+
+<<without repetition>>
+AD: 2691
+eczema non-AD: 6001
+dermatitis non-AD: 514
+other non-AD: 3472
+
+
+AD--> 'atopic dermatitis' in text
+eczema non-AD--> 'atopic dermatitis' NOT in text, and ' eczema ' in text
+dermatitis non-AD--> 'atopic dermatitis' NOT in text and ' eczema ' NOT in text, and ' dermatitis ' in text
+other non-AD--> text not having 'atopic dermatitis', ' eczema ', or ' dermatitis '.
