@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Data info
 
 Statistics of what's in the pubmed abstract:
@@ -48,3 +49,10 @@ After masking the keywords we used to prepare the classification data, the class
 
 
 
+=======
+# Experiments on PubMed Abstracts
+
+1. Split the pubmed abstracts found by the key word: eczema from pubmed central, into abstracts containing the term Atopic Dermatitis (AD).
+2. Train a binary classifier that can classify AD and non-AD abstracts. As a pre-processing steps the terms eczema and atopic dermatitis is removed.
+  This is to avoid trivial classification.
+>>>>>>> 9c76b23294184eb91c7170c7b3dc570b24656650
